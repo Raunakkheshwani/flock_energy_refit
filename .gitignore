@@ -1,0 +1,19 @@
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data archives and datasets
+data/raw/
+data/cleaned/
+
+# Local environment files
+.env
+.DS_Store
+
+# Temporary files
+*.tmp

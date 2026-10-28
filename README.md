@@ -5,8 +5,8 @@
 A reproducible, end-to-end Python pipeline that:
 
 1. **Cleans raw REFIT smart-meter data** for House 1 — sorts, deduplicates, clips impossible values, resamples from ~8-second to 1-minute intervals, and flags long outages.
-2. **Analyses washing-machine usage** across four UK households (Houses 1, 2, 3, 5) using the official cleaned REFIT data — detecting cycles, profiling usage patterns by hour and day, and comparing cycle characteristics cross-house.
-3. **Builds a Random Forest disaggregation model** that estimates washing-machine power from the whole-house aggregate signal alone, evaluated on a held-out household (House 5).
+2. **Analyses washing-machine usage** across **10 UK households** (Houses 1–10) using the official cleaned REFIT data — detecting cycles, profiling usage patterns by hour and day, and comparing cycle characteristics cross-house.
+3. **Builds a Random Forest disaggregation model** trained on 8 households (~3.2M samples) that estimates washing-machine power from the whole-house aggregate signal alone, evaluated on a held-out household (House 5) using both per-minute and per-cycle metrics.
 
 ---
 
